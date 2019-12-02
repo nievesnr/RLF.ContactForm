@@ -1,0 +1,27 @@
+{
+	"NombreUser": "",
+	"ApellidosUser": "",
+	"UserMail": "",
+	"MotivoContacto": {
+		"SelectedSubject": "item0",
+		"subjectCollection": [
+			{
+				"subject":"Pedido",
+				"subjectId":"item0"
+			},
+			{
+				"subject": "Envios y devoluciones",
+				"subjectId":"item1"
+			},
+			{
+				"subject": "Pago",
+				"subjectId":"item2"
+			},
+			{
+				"subject": "Otros",
+				"subjectId":"item3"
+			}
+		]
+	},
+	"TextExp": ""
+}

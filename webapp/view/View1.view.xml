@@ -1,0 +1,58 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns:core="sap.ui.core" xmlns="sap.m" controllerName="ContactForm.ContactForm.controller.View1" displayBlock="true">
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page id="page" title="{i18n>title}">
+					<content>
+						<sap.ui.layout.form:Form xmlns:sap.ui.layout.form="sap.ui.layout.form" editable="true" id="form0">
+							<sap.ui.layout.form:formContainers>
+								<sap.ui.layout.form:FormContainer title="Contacta con nosotros" id="container0">
+									<sap.ui.layout.form:formElements>
+										<sap.ui.layout.form:FormElement label="Nombre" id="element0">
+											<sap.ui.layout.form:fields>
+												<Input width="100%" id="NombreUser" value="{/NombreUser}"/>
+											</sap.ui.layout.form:fields>
+										</sap.ui.layout.form:FormElement>
+										<sap.ui.layout.form:FormElement label="Apellidos" id="element5">
+											<sap.ui.layout.form:fields>
+												<Input width="100%" id="ApellidosUser" value="{/ApellidosUser}"/>
+											</sap.ui.layout.form:fields>
+										</sap.ui.layout.form:FormElement>
+										<sap.ui.layout.form:FormElement label="Email" id="element0_1574334884815">
+											<sap.ui.layout.form:fields>
+												<Input width="100%" id="UserMail" value="{/UserMail}"/>
+											</sap.ui.layout.form:fields>
+										</sap.ui.layout.form:FormElement>
+										<sap.ui.layout.form:FormElement label="Asunto" id="element1">
+											<sap.ui.layout.form:fields>
+												<Select xmlns="sap.m" id="MotivoContacto" forceSelection="false" selectedKey="{/SelectedSubject}"
+													items="{ path: '/subjectCollection', sorter: { path: 'subject' } }">
+													<core:Item key="{subjectId}" text="{subject}"/>
+												</Select>
+											</sap.ui.layout.form:fields>
+										</sap.ui.layout.form:FormElement>
+										<sap.ui.layout.form:FormElement label="Pregunta" id="element8">
+											<sap.ui.layout.form:fields>
+												<TextArea xmlns="sap.m" rows="4" id="TextExp" value="{/TextExp}"/>
+											</sap.ui.layout.form:fields>
+										</sap.ui.layout.form:FormElement>
+									</sap.ui.layout.form:formElements>
+								</sap.ui.layout.form:FormContainer>
+							</sap.ui.layout.form:formContainers>
+							<sap.ui.layout.form:layout>
+								<sap.ui.layout.form:ResponsiveGridLayout id="layout0"/>
+							</sap.ui.layout.form:layout>
+						</sap.ui.layout.form:Form>
+					</content>
+					<footer>
+						<Bar id="bar0">
+							<contentRight>
+								<Button xmlns="sap.m" text="Contactar" id="btContact" type="Accept" press="onSendPress"/>
+							</contentRight>
+						</Bar>
+					</footer>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>
